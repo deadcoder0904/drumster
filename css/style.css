@@ -1,0 +1,51 @@
+html {
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-family: Lobster;
+	color: white;
+}
+
+header {
+	font-size: 6rem;
+	text-align: center;
+}
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#readme {
+	font-size: 2rem;
+	color: orange;
+	text-align: center;
+}
+
+.keys {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.key {
+	color: black;
+	font-size: 3rem;
+	background: rgba(255,255,255,0.7);
+	border: 0.5rem solid rgba(0,0,255,0.6);
+	box-shadow: 0rem 3rem #333;
+	text-align: center;
+	width: 12rem;
+	border-radius: 50%;
+	transition: all, all, transform 0.07s;
+	padding: 2.5rem;
+	margin: 4rem 2rem;
+}
+
+.playing {
+	transform: scale(1.2);
+	border: 0.5rem groove yellow;
+}
