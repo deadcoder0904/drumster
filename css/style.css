@@ -30,7 +30,7 @@ header {
 	color: black;
 	font-size: 3rem;
 	background: rgba(255,255,255,0.7);
-	border: 0.5rem solid rgba(0,0,255,0.6);
+	border: 0.5rem solid gray;
 	box-shadow: 0rem 3rem #333;
 	text-align: center;
 	width: 12rem;
@@ -42,8 +42,8 @@ header {
 }
 
 .playing {
-	transform: scale(1.2);
-	border: 0.5rem groove yellow;
+	transform: scale(1.1);
+	border: 0.5rem groove #ffd200;
 }
 
 .noselect {
