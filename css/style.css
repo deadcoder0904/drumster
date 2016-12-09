@@ -1,8 +1,5 @@
 html {
   background: url(bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 	font-family: Lobster;
 	color: white;
@@ -20,10 +17,17 @@ header {
 }
 
 .keys {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .key {
@@ -35,21 +39,24 @@ header {
 	text-align: center;
 	width: 12rem;
 	border-radius: 50%;
+	-webkit-transition: all, all, -webkit-transform 0.07s;
+	transition: all, all, -webkit-transform 0.07s;
 	transition: all, all, transform 0.07s;
+	transition: all, all, transform 0.07s, -webkit-transform 0.07s;
 	padding: 2.5rem;
 	margin: 4rem 2rem;
 	cursor: pointer;
 }
 
 .playing {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 	border: 0.5rem groove #ffd200;
 }
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Chrome/Safari/Opera */
-     -khtml-user-select: none; /* Konqueror */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */ /* Konqueror */
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently not supported by any browser */
